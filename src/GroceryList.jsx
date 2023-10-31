@@ -21,6 +21,33 @@ export default function GroceryList() {
         }
     }, [groceries])
 
+    const handleAddItem = () => {
+        if (newItem.trim() !== "") {
+            setGroceries([...groceries, { text: newItem.trim(), checked: false }]);
+            setNewItem("");
+            setButtonPopup(true);
+            setMessage("Item added to the list");
+        } else {
+            setButtonPopup(true);
+            setMessage("Please provide value");
+        }
+    };
+
+    const handleDeleteItem = (index) => {
+        const newGroceries = [...groceries];
+        newGroceries.splice(index, 1);
+        setGroceries(newGroceries);
+        setButtonPopup(true);
+        setMessage("Deleted a grocery item");
+    };
+
+    const handleToggleItem = (index) => {
+        const newGroceries = [...groceries];
+        newGroceries[index].checked = !newGroceries[index].checked;
+        setGroceries(newGroceries);
+    };
+
+
 
 
 
