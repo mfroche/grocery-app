@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #b2c0f0;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(26, 15, 53);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.groceryList {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  min-width: 30rem;
+  border-radius: 0.6rem;
+  object-fit: fill;
+  margin: 1.8rem;
+  padding: 2rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.textfield {
+  padding: 1rem;
+}
+
+.text-input {
+  background-color: rgb(225, 223, 248);
+  padding: 0.5rem;
+  height: 2.4rem;
+  width: 15rem;
+  border-radius: 0.6rem;
+  border-top: 0.14rem;
+  border-bottom: 0.14rem;
+  border-left: 0.14rem;
+  border-right: 0.14rem;
+  border-color: rgb(158, 153, 153);
+  border-style: solid;
+}
+
+.add-btn {
+  background-color: rgb(68, 133, 253);
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-left: 0.6rem;
+  border-radius: 0.6rem;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 23rem;
+  padding: 0.8rem;
+  border-color: rgb(158, 153, 153);
+  border-style: solid;
+  list-style: none;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.item-name {
+  font-size: 0.9rem;
+}
+
+.item-check {
+  display: flex;
+  flex-direction: row;
+}
+
+.delete-btn {
+  background-color: rgb(60, 75, 104);
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-left: 1.5rem;
+  border-radius: 0.6rem;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 7rem;
+  border-radius: 0.6rem;
+  object-fit: fill;
+  margin-top: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.close-btn {
+  width: 18rem;
+  background-color: rgb(26, 15, 53);
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
